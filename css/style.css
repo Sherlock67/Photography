@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Licorice', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #aaaaaa3f;
+}
+/* Navigation Bar */
+.container{
+    max-width: 1200px;
+    margin:0 auto 80px;
+    padding: 0 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 110px ;
+    align-items: center;
+    /* background-color: yellow;  */
+
+}
+.top-heading{
+    font-size: 52px;
+   
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 170px;
+    margin-bottom: 10px;
+}
+.nav-menu li{
+    list-style: none;
+    margin:10px;
+    
+}
+.nav-menu li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    padding: 15px 20px;
+    
+}
+
+/* Navigation End */
+
+/* Introduction Start */
+
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     grid-column-gap: 200px; 
+}
+.introduction-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.introduction-right img{
+    width: 400px;
+    
+    
+}
+.introduction-right img:hover{
+    /* transform: rotateX(30deg); */
+}
+/* .top-heading{
+    width: 582px;
+   
+} */
+.top-desc{
+    width: 505px;
+    height: 60.9px;
+    margin-left: 30px;
+}
+.primary-button{
+    height: 44px;
+    width: 196px;
+    margin-left: 30px;
+    padding:10px, 24px, 10px, 24px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+/* company names */
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin: auto;
+}
+/* Popular Picture */
+.all-products{
+	display: flex;
+	flex-direction: column;
+	/* position: relative; */
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap: 30px;
+     margin: auto; 
+    width: 80%;
+    /* position: relative; */
+}
+.top-title{
+    font-size: 30px;
+    font-weight: bold;
+    color : black;
+    text-align: center;
+    /* position:relative; */
+    padding-bottom: 40px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.178);
+	border-radius: 10px;
+	padding: 15px;
+}
+.product-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.price{
+    font-size: 30px;
+    color: black;
+    margin-right: 10px;
+}
+.rating{
+    display: flex;
+	align-items: center;
+	font-size: 15px;
+	color: rgb(180, 160, 160);
+}
+
+.rate{
+    margin-right: 10px;
+    color: #fb8200;
+}
+.basic-info{
+    font-size: 14px;
+	font-weight: bold;
+	color: #787885;
+}
+
+/* contact me styles */
+.contact-cards{
+    /* margin-top: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    width: 100%;
+   
+}
+.contact-details{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.contact-card{
+    display: flex;
+	flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+	box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.178);
+	border-radius: 10px;
+	padding: 15px;
+}
+.contact-me{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.icon{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    color: #fb8200;  
+}
+footer{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 200px;
+    background: #0A0826;
+
+}
+.icons i{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+@media (max-width:688px) {
+    .introduction{
+       grid-template-columns: 1fr;
+       
+    }
+    .introduction-left{
+        order: 2;
+    }
+    .introduction-right{
+        order: 1;
+        margin: auto;
+    }
+    .logo{
+        flex-wrap: wrap;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .contact-cards{
+        grid-template-columns: 1fr;
+    }
+    .nav-menu{
+        display: none;
+    }
+    
+}
