@@ -67,7 +67,7 @@ nav{
 .introduction{
     display: grid;
     grid-template-columns: 1fr 1fr;
-     grid-column-gap: 200px; 
+    grid-column-gap: 200px; 
 }
 .introduction-left{
     display: flex;
@@ -76,18 +76,20 @@ nav{
     align-items: flex-start;
 }
 .introduction-right img{
-    width: 400px;
+    width: 80%;
+    text-align: center;
+    
     
     
 }
 
-/* .top-heading{
-    width: 582px;
+ .top-heading{
+   font-size: 30px;
    
-} */
+} 
 .top-desc{
-    width: 505px;
-    height: 60.9px;
+    /* width: 505px;
+    height: 60.9px; */
     margin-left: 30px;
 }
 .primary-button{
@@ -116,7 +118,7 @@ nav{
 .all-products{
 	display: flex;
 	flex-direction: column;
-	/* position: relative; */
+	 position: relative; 
 }
 .product-image{
     flex-grow: 1;
@@ -128,14 +130,14 @@ nav{
     grid-gap: 30px;
      margin: auto; 
     width: 80%;
-    /* position: relative; */
+     position: relative; 
 }
 .top-title{
     font-size: 30px;
     font-weight: bold;
     color : black;
     text-align: center;
-    /* position:relative; */
+     position:relative; 
     padding-bottom: 40px;
 }
 .card {
@@ -205,7 +207,8 @@ nav{
     margin-top: auto;
     margin-bottom: auto;
     font-size: 40px;
-    color: #fb8200;  
+    /* color: #fb8200;   */
+    color: cornflowerblue
 }
 footer{
     text-align: center;
