@@ -224,6 +224,7 @@ footer{
 .icons i{
     margin-top: 5px;
     margin-left: 10px;
+    color: cornflowerblue;
 }
 @media (max-width:688px) {
     .introduction{
